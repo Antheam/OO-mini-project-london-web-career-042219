@@ -6,8 +6,10 @@ def initialize(recipe, user, date, rating)
   @user = user
   @date = date
   @rating = rating
-@@all << self
+  @@all << self
 end
 
-
+def self.all
+  @@all
+end
 end
